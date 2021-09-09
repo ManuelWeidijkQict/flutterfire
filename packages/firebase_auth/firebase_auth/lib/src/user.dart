@@ -22,11 +22,25 @@ class User {
     return _delegate.displayName;
   }
 
+  set displayName(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.displayName = value;
+  }
+
   /// The users email address.
   ///
   /// Will be `null` if signing in anonymously.
   String? get email {
     return _delegate.email;
+  }
+
+  set email(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.email = value;
   }
 
   /// Returns whether the users email address has been verified.
@@ -39,14 +53,35 @@ class User {
     return _delegate.emailVerified;
   }
 
+  set emailVerified(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.emailVerified = value;
+  }
+
   /// Returns whether the user is a anonymous.
   bool get isAnonymous {
     return _delegate.isAnonymous;
   }
 
+  set isAnonymous(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.isAnonymous = value;
+  }
+
   /// Returns additional metadata about the user, such as their creation time.
   UserMetadata get metadata {
     return _delegate.metadata;
+  }
+
+  set metadata(UserMetadata value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.metadata = value;
   }
 
   /// Returns the users phone number.
@@ -57,6 +92,13 @@ class User {
     return _delegate.phoneNumber;
   }
 
+  set phoneNumber(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.phoneNumber = value;
+  }
+
   /// Returns a photo URL for the user.
   ///
   /// This property will be populated if the user has signed in or been linked
@@ -65,9 +107,23 @@ class User {
     return _delegate.photoURL;
   }
 
+  set photoURL(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.photoURL = value;
+  }
+
   /// Returns a list of user information for each linked provider.
   List<UserInfo> get providerData {
     return _delegate.providerData;
+  }
+
+  set providerData(List<UserInfo> value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.providerData = value;
   }
 
   /// Returns a JWT refresh token for the user.
@@ -76,6 +132,13 @@ class User {
   /// support providing refresh tokens.
   String? get refreshToken {
     return _delegate.refreshToken;
+  }
+
+  set refreshToken(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.refreshToken = value;
   }
 
   /// The current user's tenant ID.
@@ -87,9 +150,23 @@ class User {
     return _delegate.tenantId;
   }
 
+  set tenantId(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.tenantId = value;
+  }
+
   /// The user's unique ID.
   String get uid {
     return _delegate.uid;
+  }
+
+  set uid(String value) {
+    if(value == null) {
+      throw new ArgumentError();
+    }
+    _delegate.uid = value;
   }
 
   /// Deletes and signs out the user.
