@@ -22,7 +22,7 @@ class User {
     return _delegate.displayName;
   }
 
-  set displayName(String value) {
+  set displayName(String? value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -36,7 +36,7 @@ class User {
     return _delegate.email;
   }
 
-  set email(String value) {
+  set email(String? value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -53,7 +53,7 @@ class User {
     return _delegate.emailVerified;
   }
 
-  set emailVerified(String value) {
+  set emailVerified(bool value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -65,7 +65,7 @@ class User {
     return _delegate.isAnonymous;
   }
 
-  set isAnonymous(String value) {
+  set isAnonymous(bool value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -92,7 +92,7 @@ class User {
     return _delegate.phoneNumber;
   }
 
-  set phoneNumber(String value) {
+  set phoneNumber(String? value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -107,7 +107,7 @@ class User {
     return _delegate.photoURL;
   }
 
-  set photoURL(String value) {
+  set photoURL(String? value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -134,7 +134,7 @@ class User {
     return _delegate.refreshToken;
   }
 
-  set refreshToken(String value) {
+  set refreshToken(String? value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -150,7 +150,7 @@ class User {
     return _delegate.tenantId;
   }
 
-  set tenantId(String value) {
+  set tenantId(String? value) {
     if(value == null) {
       throw new ArgumentError();
     }
@@ -162,7 +162,7 @@ class User {
     return _delegate.uid;
   }
 
-  set uid(String value) {
+  set uid(String? value) {
     if(value == null) {
       throw new ArgumentError();
     }
